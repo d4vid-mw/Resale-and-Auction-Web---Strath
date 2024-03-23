@@ -1,0 +1,48 @@
+<?php
+session_start();
+// This would be set upon successful login
+$username = isset($_SESSION['username']) ? $_SESSION['username'] : 'Guest';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strathmore Students Resale and Auctioning</title>
+  <link rel="stylesheet" href="home1.css">
+  <link rel="stylesheet" href="home2.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+  <span class="logo" style="color: black;">Strathmore Resale and Auctions</span>
+
+        <center>
+          <img src="strath.png">
+        </center>
+      <ul class="nav-links">
+        <li><a href="signup.php" class="button" style="color: azure;">signup</a></li>
+        <li><a href="login.php" class="button" style="color: azure;">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 style="color:black">Welcome, <?php echo htmlspecialchars($username); ?> join the community</h1>
+    <div class="join-options">
+  <div class="join-option">
+    <img src="joinbuya.png" alt="Join as a Buyer" class="join-image">
+    <h2>Be a Buyer!</h2>
+    <p>Find great deals on items being sold by other Strathmore students!</p>
+    <a href="searchproduct.php" class="button">Join as a Buyer</a>
+  </div>
+  <div class="join-option">
+    <img src="joinsela.png" alt="Join as a Seller" class="join-image">
+    <h2>Be a Seller!</h2>
+    <p>Start selling your items to other Strathmore students!</p>
+    <a href="listproduct.php" class="button">Join as a Seller</a>
+  </div>
+</body>
+</html>
