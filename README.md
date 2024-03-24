@@ -4,3 +4,5 @@ so basically the problem with the code is on list product place bid and the sear
 HEY Michael . you would like to enter the product an see it in the product list ? = product search ?
 
 Can you give me your number where I can chat with you using whatapp or Signal ? 
+
+Are you using seller - buyer - product tables ? 
